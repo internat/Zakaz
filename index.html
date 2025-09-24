@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БизнесСервис - Ведение ИП и ТОО</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>БизнесСервис</h2>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+77074167905" class="nav-phone">
+          <i class="fas fa-phone"></i>
+          +7 707 416 7905
+        </a>
+        <button class="nav-consultation-btn" onclick="openWhatsApp()">
+          Консультация
+        </button>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Полное ведение <span class="highlight">ИП и ТОО</span>
+            <br>в Казахстане
+          </h1>
+          <p class="hero-subtitle">
+            Мы предоставляем полный спектр услуг по регистрации, ведению и сопровождению вашего бизнеса. Опытные специалисты, качественные услуги.
+          </p>
+          <div class="hero-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Полное ведение документооборота</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-clock"></i>
+              <span>Быстрое оформление</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Гарантия качества</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+              Посмотреть услуги
+            </button>
+            <button class="btn-secondary" onclick="openWhatsApp()">
+              <i class="fab fa-whatsapp"></i>
+              Консультация
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-visual">
+            <div class="visual-card card-1">
+              <i class="fas fa-building"></i>
+              <h4>Регистрация ИП</h4>
+            </div>
+            <div class="visual-card card-2">
+              <i class="fas fa-file-invoice"></i>
+              <h4>Отчетность</h4>
+            </div>
+            <div class="visual-card card-3">
+              <i class="fas fa-credit-card"></i>
+              <h4>Кассовые системы</h4>
+            </div>
+            <div class="hero-shape-1"></div>
+            <div class="hero-shape-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Наши услуги</h2>
+        <p class="section-subtitle">Мы предлагаем полный спектр услуг для эффективного ведения вашего бизнеса</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 class="service-title">Регистрация и управление</h3>
+          <p class="service-description">Полное сопровождение процесса регистрации и ведения бизнеса</p>
+          <ul class="service-list">
+            <li>Регистрация ИП и ТОО</li>
+            <li>Перерегистрация</li>
+            <li>Приостановление деятельности</li>
+            <li>Закрытие ИП/ТОО</li>
+          </ul>
+        </div>
+        
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <h3 class="service-title">Касса и платежные системы</h3>
+          <p class="service-description">Настройка и сопровождение кассовых систем и платежных решений</p>
+          <ul class="service-list">
+            <li>Регистрация кассы</li>
+            <li>Снятие с учета кассы</li>
+            <li>Webkassa</li>
+            <li>Rekassa</li>
+            <li>Kaspi Pay</li>
+          </ul>
+        </div>
+        
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <h3 class="service-title">Отчетность и документооборот</h3>
+          <p class="service-description">Полное ведение отчетности и документооборота</p>
+          <ul class="service-list">
+            <li>ЭСФ (электронные счета-фактуры)</li>
+            <li>СНТ</li>
+            <li>ЭАВР</li>
+            <li>Налоговая отчетность</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Почему выбирают нас</h2>
+          <p class="section-subtitle">Мы предоставляем качественные услуги по ведению бизнеса уже более 5 лет</p>
+          
+          <div class="stats-grid">
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Довольных клиентов</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Лет опыта</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Качество услуг</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Поддержка</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="advantages-grid">
+          <div class="advantage-card animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Профессиональная команда</h3>
+            <p>Наши специалисты имеют многолетний опыт в сфере бухгалтерского учета</p>
+          </div>
+          <div class="advantage-card animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Индивидуальный подход</h3>
+            <p>Мы учитываем специфику каждого бизнеса и предлагаем оптимальные решения</p>
+          </div>
+          <div class="advantage-card animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Быстрое оформление</h3>
+            <p>Минимальные сроки выполнения работ без потери качества</p>
+          </div>
+          <div class="advantage-card animate-on-scroll">
+            <div class="advantage-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3>Доступные цены</h3>
+            <p>Конкурентные цены на все виды услуг с прозрачной системой оплаты</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p class="section-subtitle">Мы всегда готовы ответить на ваши вопросы и помочь с вашим бизнесом</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Телефон</h4>
+                <a href="tel:+77074167905">+7 707 416 7905</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <h4>WhatsApp</h4>
+                <button onclick="openWhatsApp()" class="whatsapp-link">Написать в WhatsApp</button>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:info@biznes-service.kz">info@biznes-service.kz</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Адрес</h4>
+                <p>г. Алматы, ул. Абая, 123</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <div class="cta-card">
+            <h3>Получите бесплатную консультацию</h3>
+            <p>Обсудите с нашими экспертами вопросы ведения вашего бизнеса</p>
+            <button class="cta-button" onclick="openWhatsApp()">
+              <i class="fab fa-whatsapp"></i>
+              Получить консультацию
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-logo">БизнесСервис</h3>
+          <p>Профессиональные услуги по ведению ИП и ТОО в Казахстане</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Услуги</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Регистрация ИП и ТОО</a></li>
+            <li><a href="#services">Ведение отчетности</a></li>
+            <li><a href="#services">Кассовые системы</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <div class="footer-contacts">
+            <p><i class="fas fa-phone"></i> +7 707 416 7905</p>
+            <p><i class="fas fa-envelope"></i> info@biznes-service.kz</p>
+            <p><i class="fas fa-map-marker-alt"></i> г. Алматы, ул. Абая, 123</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 БизнесСервис. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка чата -->
+  <div class="chat-button">
+    <i class="fas fa-comment"></i>
+  </div>
+
+  
+  <!-- Кнопка ИИ -->
+  <div class="ai-button">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <!-- AI Page -->
+  <div class="ai-page" id="aiPage">
+    <div class="ai-page-header">
+      <div class="container">
+        <button class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Назад на главную
+        </button>
+        <h1 class="ai-page-title">ИИ Консультант БизнесСервис</h1>
+      </div>
+    </div>
+    
+    <div class="ai-page-content">
+      <div class="ai-intro">
+        <h2>Задайте вопрос нашему ИИ-ассистенту</h2>
+        <p>Получите мгновенные ответы на вопросы о ведении ИП и ТОО, налогообложении, отчетности и других аспектах ведения бизнеса в Казахстане.</p>
+      </div>
+      
+      <div class="ai-chat-container">
+        <div class="ai-chat-header">
+          <h3>💬 Чат с ИИ-консультантом</h3>
+        </div>
+        
+        <div class="ai-chat-body">
+          <div class="ai-input-container">
+            <label for="aiQuestion" class="ai-input-label">Ваш вопрос:</label>
+            <textarea 
+              id="aiQuestion" 
+              class="ai-textarea" 
+              placeholder="Например: Как зарегистрировать ИП в Казахстане? Какие налоги платит ТОО? Нужна ли касса для моего бизнеса?"
+              rows="4"
+            ></textarea>
+          </div>
+          
+          <button id="askAI" class="ai-submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Отправить вопрос
+          </button>
+          
+          <div class="ai-response empty" id="aiResponse">
+            Здесь появится ответ ИИ-консультанта на ваш вопрос
+          </div>
+        </div>
+      </div>
+      
+      <div class="ai-suggestions">
+        <div class="suggestion-card" onclick="fillQuestion('Как зарегистрировать ИП в Казахстане?')">
+          <h4>🏢 Регистрация ИП</h4>
+          <p>Узнайте о процедуре регистрации индивидуального предпринимателя</p>
+        </div>
+        
+        <div class="suggestion-card" onclick="fillQuestion('Какие налоги платит ТОО на общем режиме?')">
+          <h4>📊 Налогообложение ТОО</h4>
+          <p>Информация о налогах и обязательных платежах для ТОО</p>
+        </div>
+        
+        <div class="suggestion-card" onclick="fillQuestion('Нужна ли касса для онлайн-торговли?')">
+          <h4>💳 Кассовые аппараты</h4>
+          <p>Требования к использованию кассовых аппаратов</p>
+        </div>
+        
+        <div class="suggestion-card" onclick="fillQuestion('Как сдавать ЭСФ через кабинет налогоплательщика?')">
+          <h4>📄 Электронные счета-фактуры</h4>
+          <p>Работа с ЭСФ и электронным документооборотом</p>
+        </div>
+        
+        <div class="suggestion-card" onclick="fillQuestion('Можно ли работать ИП без сотрудников?')">
+          <h4>👥 Трудовые отношения</h4>
+          <p>Вопросы найма сотрудников и ведения кадрового учета</p>
+        </div>
+        
+        <div class="suggestion-card" onclick="fillQuestion('Как приостановить деятельность ИП временно?')">
+          <h4>⏸️ Приостановка деятельности</h4>
+          <p>Процедура временного прекращения предпринимательской деятельности</p>
+        </div>
+      </div>
+      
+      <div class="ai-disclaimer">
+        <p>⚠️ Информация, предоставляемая ИИ-ассистентом, носит справочный характер. Для получения точных консультаций обратитесь к нашим специалистам.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
