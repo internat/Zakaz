@@ -276,7 +276,7 @@ function initSmoothScroll() {
 // Функция для открытия WhatsApp
 function openWhatsApp() {
   // Номер телефона и текст сообщения
-  const phoneNumber = '77074167905';
+  const phoneNumber = '+7 777 253 7905';
   const message = 'Здравствуйте! Я хочу узнать подробнее о ваших услугах.';
   
   // Формируем URL для WhatsApp
